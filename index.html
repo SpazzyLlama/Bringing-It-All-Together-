@@ -1,0 +1,40 @@
+<!-- Name: [Your Name] -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Portal</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header for the user experience -->
+        <h1>Join the Community</h1>
+        
+        <!-- Requirement: Must use a form with an onsubmit attribute -->
+        <!-- Note: We return false to prevent the page from refreshing -->
+        <form id="signupForm" onsubmit="return validateUser(this)">
+            
+            <!-- Input field for user name -->
+            <label for="userName">Full Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <!-- Input field for age to test logic -->
+            <label for="userAge">Age:</label>
+            <input type="number" id="userAge" name="userAge" required>
+
+            <!-- Submit button to trigger the function -->
+            <button type="submit">Register Now</button>
+        </form>
+
+        <!-- Requirement: Result area using innerHTML instead of alerts -->
+        <div id="displayArea"></div>
+    </div>
+
+    <!-- Linking the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
